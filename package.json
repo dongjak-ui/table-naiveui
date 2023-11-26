@@ -1,14 +1,14 @@
 {
-  "name": "{{repo_name}}",
+  "name": "table-naiveui",
   "version": "1.0.0",
   "description": "",
   "publishConfig": {
     "access": "public"
   },
-  "repository": "{{repo_url}}",
+  "repository": "https://github.com/dongjak-ui/table-naiveui",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && vue-tsc  --outFile a.d.ts   && vite build && pnpm run copy-library-files &&  shx mv a.d.ts dist/{{repo_name}}.d.ts",
+    "build": "rimraf dist && vue-tsc  --outFile a.d.ts   && vite build && pnpm run copy-library-files &&  shx mv a.d.ts dist/table-naiveui.d.ts",
     "copy-library-files": "copyfiles -f ./dist/* ./docs/.vuepress/public/lib",
     "semantic-release": "semantic-release",
     "docs:dev": "pnpm run build  && vuepress dev docs",

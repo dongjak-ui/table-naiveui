@@ -12,12 +12,12 @@ fs.readFile('package.json', 'utf8', function(err, data) {
 
     // 添加新的字段
     packageObj.files = ["dist"];
-    packageObj.typings = "./dist/{{repo_name}}.d.ts";
-    packageObj.module = "./dist/{{repo_name}}.es.js";
+    packageObj.typings = "./dist/table-naiveui.d.ts";
+    packageObj.module = "./dist/table-naiveui.es.js";
     packageObj.exports = {
         ".": {
-            "types": "./dist/{{repo_name}}.d.ts",
-            "import": "./dist/{{repo_name}}.es.js"
+            "types": "./dist/table-naiveui.d.ts",
+            "import": "./dist/table-naiveui.es.js"
         }
     };
 

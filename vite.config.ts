@@ -21,9 +21,9 @@ export default defineConfig({
     build: {
         lib: {
             entry: path.resolve(__dirname, 'index.ts'),
-            name: "{{repo_name}}",
+            name: "table-naiveui",
             formats: ['es', 'umd'], // adding 'umd' requires globals set to every external module
-            fileName: (format) => `{{repo_name}}.${format}.js`,
+            fileName: (format) => `table-naiveui.${format}.js`,
         },
         rollupOptions: {
             // 预依赖(peerDependencies)的模块不要打包到库中
