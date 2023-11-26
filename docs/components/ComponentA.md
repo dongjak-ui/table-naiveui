@@ -34,7 +34,7 @@ order: 1
 ```json
 {
   "imports": {
-    "vue3-library-template": "http://localhost:8080/lib/{{repo_name}}.es.js"
+    "vue3-library-template": "http://localhost:8080/lib/table-naiveui.es.js"
   }
 }
 ```
