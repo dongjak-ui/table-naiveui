@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {NTag} from 'naive-ui'
-import {computed} from "vue";
 import {ITagRenderer} from "@dongjak-public-types/table";
 
 interface Props {

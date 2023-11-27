@@ -2,6 +2,8 @@ import {ColumnType, IColumn, ITable} from "@dongjak-public-types/table";
 import {TableBaseColumn, TableColumn, TableSelectionColumn} from "naive-ui/es/data-table/src/interface";
 import Tag from '../renderer/Tag.vue';
 import {VNodeChild} from "vue";
+import {NText} from "naive-ui";
+import {createRenderer} from "../renderer";
 
 
 
@@ -35,7 +37,7 @@ export const createColumn = (table: ITable<any>): (column: IColumn | ColumnType)
                         title: '状态',
                         key: 'status',
                         render: (rowData: any, rowIndex: number) : VNodeChild =>{
-
+                            return h(NText, { depth: 3 }, { default: () => '未填写' })
                         }
                     } as TableBaseColumn<any>
                 default:
@@ -46,6 +48,11 @@ export const createColumn = (table: ITable<any>): (column: IColumn | ColumnType)
                 // menuTabs:['generalMenuTab', 'filterMenuTab', 'columnsMenuTab'],
                 title: (column as IColumn).label,
                 key: (column as IColumn).field,
+                minWidth:100,
+                ellipsis: {
+                    tooltip: true
+                },
+                // ellipsisComponent:"performant-ellipsis",
                 // resizable: true,
                 // submitField: (column as IColumn).submitField ?? (column as IColumn).field,
                 // submitValueGetter: (column as IColumn).submitValueGetter,
@@ -58,7 +65,7 @@ export const createColumn = (table: ITable<any>): (column: IColumn | ColumnType)
                 // },
                 //editable: (column as IColumn).editor !== undefined,
                 // ...createTooltip(column as IColumn, table)((column as IColumn).tooltip),
-                // ...createRenderer(table)((column as IColumn).renderer),
+                ...createRenderer(table)((column as IColumn).renderer ,(column as IColumn)),
                 // ...createEditor(table)((column as IColumn).editor),
                 // ...createValueGetter(column as IColumn),
                 // ...createValueFormatter(column as IColumn)

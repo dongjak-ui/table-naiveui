@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@dongjak-public-types/table": "workspace:*",
-    "@dongjak-public-types/commons": "^2.2.0"
+    "@dongjak-public-types/commons": "^2.2.0",
+    "v-viewer": "^3.0.11"
   }
 }
