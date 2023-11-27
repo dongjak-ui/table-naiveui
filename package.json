@@ -19,9 +19,12 @@
   "author": "cruldra",
   "license": "MIT",
   "peerDependencies": {
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "naive-ui": "2.35.0"
   },
   "devDependencies": {
+    "@dongjak-public-types/table": "workspace:*",
+    "@dongjak-public-types/commons": "workspace:*",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^10.0.4",
     "@semantic-release/git": "^10.0.1",

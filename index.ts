@@ -1,8 +1,6 @@
 import 'uno.css';
-import ComponentA from './src/ComponentA.vue';
-import ComponentB from './src/ComponentB.vue';
+import NaiveDataTable from './src/NaiveDataTable.vue';
 
 export {
-    ComponentA,
-    ComponentB
+    NaiveDataTable
 };
