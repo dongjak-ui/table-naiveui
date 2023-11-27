@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<ITable<any>>(), {
 </script>
 
 <template>
-  <n-data-table :columns="columns" :data="data" />
+  <n-data-table   />
 </template>
 
 <style scoped>

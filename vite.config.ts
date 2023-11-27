@@ -3,6 +3,8 @@ import vue from '@vitejs/plugin-vue';
 import path from "path";
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 export default defineConfig({
     plugins: [
         vue(),
@@ -11,7 +13,13 @@ export default defineConfig({
             imports: ['vue'],
             dts: 'src/typings/auto-imports.d.ts',
             vueTemplate: true,
-        })
+        }),
+        Components({
+            dts: 'src/typings/components.d.ts',
+            resolvers: [
+                NaiveUiResolver(),
+            ]
+        }),
     ], // to process SFC
     resolve: {
         alias: {
@@ -27,7 +35,7 @@ export default defineConfig({
         },
         rollupOptions: {
             // 预依赖(peerDependencies)的模块不要打包到库中
-            external: ['vue', /primevue\/.+/], // not every external has a global
+            external: ['vue','naive-ui' ,/primevue\/.+/], // not every external has a global
             output: {
                 // disable warning on src/index.ts using both default and named export
                 exports: 'named',
