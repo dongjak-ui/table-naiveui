@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import {IPagination, ITable, RowActionType, RowSelectionMode} from "@dongjak-public-types/table";
-import {Theme} from "@dongjak-public-types/commons";
+import {QueryPayloads, Theme} from "@dongjak-public-types/commons";
+import {createColumn} from "./column";
+import {computed, onMounted} from "vue";
+import {darkTheme, NConfigProvider} from 'naive-ui'
 
 const props = withDefaults(defineProps<ITable<any>>(), {
   theme: Theme.DARK,
@@ -16,10 +19,22 @@ const props = withDefaults(defineProps<ITable<any>>(), {
     return ["add", "edit", "delete"] as RowActionType[]
   }
 })
+const _columns = computed(() => {
+  return props?.columns?.map(createColumn(props))
+})
+const data = ref<any>([])
+onMounted(async () => {
+  const resData = (await props.dataSource.get(QueryPayloads.firstPage())).data?.data
+  if (resData)
+    data.value = resData
+})
 </script>
 
 <template>
-  <n-data-table   />
+  <n-config-provider :theme="darkTheme">
+    <n-data-table :columns="_columns" :data="data"/>
+  </n-config-provider>
+
 </template>
 
 <style scoped>

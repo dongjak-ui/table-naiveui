@@ -20,12 +20,7 @@ export default defineConfig({
                 NaiveUiResolver(),
             ]
         }),
-    ], // to process SFC
-    resolve: {
-        alias: {
-            '@': path.resolve(__dirname, '.', './src/'),
-        },
-    },
+    ],
     build: {
         lib: {
             entry: path.resolve(__dirname, 'index.ts'),

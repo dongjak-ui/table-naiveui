@@ -11,8 +11,8 @@
     "build": "rimraf dist && vue-tsc  --outFile a.d.ts   && vite build && pnpm run copy-library-files &&  shx mv a.d.ts dist/table-naiveui.d.ts",
     "copy-library-files": "copyfiles -f ./dist/* ./docs/.vuepress/public/lib",
     "semantic-release": "semantic-release",
-    "docs:dev": "pnpm run build  && vuepress dev docs",
-    "docs:build": "pnpm run build  && vuepress build docs"
+    "docs:dev": "pnpm -C docs run docs:dev",
+    "docs:build": "pnpm -C docs run docs:build"
   },
   "type": "module",
   "keywords": [],
@@ -24,8 +24,6 @@
   },
   "devDependencies": {
     "unplugin-vue-components": "0.25.2",
-    "@dongjak-public-types/table": "^3.2.0",
-    "@dongjak-public-types/commons": "^2.2.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^10.0.4",
     "@semantic-release/git": "^10.0.1",
@@ -35,7 +33,6 @@
     "@types/node": "^20.9.0",
     "@vitejs/plugin-vue": "^4.4.1",
     "@vue/repl": "^2.6.3",
-    "@vuepress/client": "^2.0.0-rc.0",
     "copyfiles": "^2.4.1",
     "handlebars": "^4.7.8",
     "nodejs-jieba": "^0.0.2",
@@ -46,10 +43,10 @@
     "unocss": "^0.57.3",
     "unplugin-auto-import": "^0.17.1",
     "vite": "^4.5.0",
-    "vue-tsc": "^1.8.22",
-    "vuepress": "2.0.0-rc.0",
-    "vuepress-plugin-search-pro": "2.0.0-rc.1",
-    "vuepress-theme-hope": "2.0.0-rc.1",
-    "esbuild": "0.19.8"
+    "vue-tsc": "^1.8.22"
+  },
+  "dependencies": {
+    "@dongjak-public-types/table": "^3.3.0",
+    "@dongjak-public-types/commons": "^2.2.0"
   }
 }

@@ -1,0 +1,1890 @@
+{
+  "code": 1,
+  "message": "Success",
+  "data": {
+    "pageSize": 10,
+    "data": [
+      {
+        "name": "10年荣威350",
+        "mileage": 10,
+        "transferTimes": 3,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1291132800000,
+          "localizationStr": "2010-12",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1701360000000,
+          "localizationStr": "2023-12",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 72140,
+          "name": "350S 1.5L 自动迅达版",
+          "year": 2010,
+          "seriesId": 12599,
+          "brandId": 1861
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1669824000000,
+          "localizationStr": "2022-12",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1669824000000,
+          "localizationStr": "2022-12",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "silver",
+          "label": "银色",
+          "textColor": "white",
+          "name": "SILVER",
+          "ordinal": 6
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "自动",
+          "englishName": "Automatic",
+          "color": "#B7C488",
+          "textColor": "white",
+          "name": "AT",
+          "ordinal": 1
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 2,
+        "price": 1.48,
+        "priceOnNew": 12.87,
+        "installment": true,
+        "transferable": true,
+        "desc": "10年12月上牌荣威350，自动档带天窗，电动真皮座椅，大屏导航，多功能方向盘，自动空调，当年的满配",
+        "appearanceImages": [
+          {
+            "id": 215,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/bc4cd8a4-f5c2-429f-a5b8-d9b6507c15587666229663669928827IMG_0078880073357756558d1b6a8589eca1421164fe85d6-composed.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 216,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/5a9f1e9e-2ec9-4d50-b25e-fb89a3d48cab9408427915502587575IMG_0080b9b1578370689c38c6935ffa34d3c3b083759420-composed.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 217,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/3d29ff38-fe65-417b-88a2-feb74826b8f82092210884503989532IMG_0081aec153f3172b7e95cff99bd5dde68a452d97b362-composed.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 218,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/7f435b30-de8e-4211-be04-9d3c640f5e129906343470040124898IMG_0079c075545e7b50a6c27c7c108d3a19e1a3ae3d51bc-composed.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 219,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/2256beec-794a-4cb6-a7c1-e391944043fb8406484258997139085IMG_008210cb76b13a7dd5b5c23238f4b476d9c743fa441f-composed.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 220,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/54f0d14f-b25f-46ce-9e86-2174b8801ce114204111249685662484IMG_0083b01423b0f51cf8162fb7222a21d824d4547c4641-composed.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 221,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/477f38e0-893b-4308-99f9-0bf91e86f5b89779902333859602986IMG_0076d744aaa3f68fd1b079fd3fb398814f00079feabe-composed.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 222,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/cb24627d-ed2d-43b8-9f2a-a9d7d5aa0f82245419153738756392IMG_00773c86f190e374216a6689545bd010e954eec3842d-composed.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "vinCode": "kkk",
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "10年雪弗兰景程",
+        "mileage": 16,
+        "transferTimes": 1,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1267372800000,
+          "localizationStr": "2010-03",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 29171,
+          "name": "10度版 6.6kW充电机空调2座版",
+          "year": 2021,
+          "seriesId": 10243,
+          "brandId": 1684
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1646064000000,
+          "localizationStr": "2022-03",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "black",
+          "label": "黑色",
+          "textColor": "white",
+          "name": "BLACK",
+          "ordinal": 4
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "自动",
+          "englishName": "Automatic",
+          "color": "#B7C488",
+          "textColor": "white",
+          "name": "AT",
+          "ordinal": 1
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 5,
+        "price": 1.1,
+        "priceOnNew": 16.58,
+        "installment": true,
+        "transferable": true,
+        "desc": "新到一台雪弗兰景程，自动带天窗高配，电动真皮座椅，带双座椅加热，带原车中控屏倒车影像，桃木内饰，个人一手过我们名下，审车保险同步2024年2月，发变完美",
+        "appearanceImages": [
+          {
+            "id": 28,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_52905ade6b689ec44e68daf0a7b72c45fd9c556bb126-composed.JPG",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 29,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_5294175a7e503c708e841cf27c9e9f3818e26f15c814-composed.JPG",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 30,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_52912a8e4834d0d05c3ee20b2735621a37884fe5e978-composed.JPG",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 31,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_52920dee4108916fda9c6f38a5dfab77871d4fa9df96-composed.JPG",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 32,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_529326832e92bc590230ef41745bef1354703b3541bd-composed.JPG",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 33,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_5289c43da6eddc19524bfdd07e93716f0245bb138e69-composed.JPG",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 34,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_52972ac6a267ec243dca84a934f2dbcb47c8ebf89b92-composed.JPG",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 35,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_5296a4a8f35c4115434dc557b70f49950799336b5251-composed.JPG",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 36,
+            "url": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/20230911/IMG_52959328e99d96a27afe338b89ccddf9b6c9bec038cf-composed.JPG",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "13年江淮瑞风s5",
+        "mileage": 11,
+        "transferTimes": 1,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1385827200000,
+          "localizationStr": "2013-12",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1732982400000,
+          "localizationStr": "2024-12",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 59389,
+          "name": "2.0L 手动尊贵版",
+          "year": 2013,
+          "seriesId": 11751,
+          "brandId": 1779
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1669824000000,
+          "localizationStr": "2022-12",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1732982400000,
+          "localizationStr": "2024-12",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "white",
+          "label": "白色",
+          "textColor": "black",
+          "name": "WHITE",
+          "ordinal": 5
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "越野车",
+          "englishName": "SUV",
+          "color": "#B7C488",
+          "textColor": "white",
+          "name": "SUV",
+          "ordinal": 1
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "手动",
+          "englishName": "Manual",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "MT",
+          "ordinal": 0
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 26,
+        "price": 1.28,
+        "priceOnNew": 8.98,
+        "installment": true,
+        "transferable": true,
+        "desc": "新到:2013年12月上牌个人一手江淮瑞风S5，手动挡不带窗，全车原版无事故，圈漆已做好，发变巅峰，没其他太多配置，全款一万多包过户，订车赠送一年交强险，赠送大屏导航，赠送脚垫一套，赠送全车油水大保养（机油，机油滤芯，空气轮芯，空调滤芯，防冻液，变速箱油，刹车油等），个性定制，根据客户需求来，不需要这些服务兑现也可以，钓鱼工地需求的可以看过来",
+        "appearanceImages": [
+          {
+            "id": 204,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/65e556bb-8885-443c-aec0-07b2068d6ace24060450895595739405381698729719_.pic.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 205,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/1fbcfa47-77ae-45ea-94fc-865d771d9def29661735754368066375391698729720_.pic.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 206,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/cc8b01b3-8a80-4fde-8655-9f5b1bd43058121900111922554026595401698729721_.pic.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 207,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/64b31e17-90f0-4b60-bcd5-c5a996af09c737266467297464605145411698729722_.pic.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 208,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/73916f33-883a-43d1-b008-634ee854864246262076238449869965421698729723_.pic.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 209,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/bc7cf821-e8d8-4c87-a6ae-67360628f622103186313780017700695441698729726_.pic.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 210,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/4b04dba8-3c2b-4303-a1aa-887edfe550978515296850861252045451698729727_.pic.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "09年福特蒙迪欧致胜",
+        "mileage": 19,
+        "transferTimes": 3,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1238428800000,
+          "localizationStr": "2009-03",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1717171200000,
+          "localizationStr": "2024-06",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 49960,
+          "name": "2.3L 时尚型",
+          "year": 2013,
+          "seriesId": 11207,
+          "brandId": 1731
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1717171200000,
+          "localizationStr": "2024-06",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1717171200000,
+          "localizationStr": "2024-06",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "black",
+          "label": "黑色",
+          "textColor": "white",
+          "name": "BLACK",
+          "ordinal": 4
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "自动",
+          "englishName": "Automatic",
+          "color": "#B7C488",
+          "textColor": "white",
+          "name": "AT",
+          "ordinal": 1
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 28,
+        "price": 1.38,
+        "priceOnNew": 22.68,
+        "installment": true,
+        "transferable": true,
+        "desc": "09年上牌福特蒙迪欧致胜，2.3排量马六同款发动机，6速手自一体变速箱，加速平稳，底盘无异响，漆面内饰零投资，多功能方向盘，加装大屏导航，倒车影像审车明年，交强明年6月，标价全款包过户\n09年3月上牌，\n审车2024年3月，交强险2024年6月，公里数19万KM，国四排放标准，\n",
+        "appearanceImages": [
+          {
+            "id": 234,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/ac75c384-6d1f-4079-b84a-28afcdc8ba498811122938664027849%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106171936.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 236,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/ff42d9f5-4898-4b8b-8d2f-8f55ebf3bab615140211269974421024%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061719371.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 237,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/d4505a2d-a220-49af-aa79-34dec88863383518708167621161451%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061719363.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 238,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/e4935293-538f-4822-8f56-86d905b0c02b4840893106504331798%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106171937.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 239,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/0d3d3d14-e919-4850-94f3-d7cc01a1da367554480782003074974%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061719361.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 240,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/dc5cbb13-8951-486c-aef6-4d98d15412e35774660309941210781%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061719362.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 226,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/4b26f9e1-c533-4540-853c-17ef3feb3b6513562684693959651538%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061719381.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 227,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/df3939a8-1ac8-499f-a8f1-3ce6440253c314879513802489629575%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061719382.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 228,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/abef5149-9462-4541-b7c0-f202393eb69811074224743283995032%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106171938.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "09年起亚锐欧",
+        "mileage": 20,
+        "transferTimes": 1,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1235836800000,
+          "localizationStr": "2009-03",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 70505,
+          "name": "1.4L MT",
+          "year": 2007,
+          "seriesId": 12496,
+          "brandId": 1853
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "silver",
+          "label": "银色",
+          "textColor": "white",
+          "name": "SILVER",
+          "ordinal": 6
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "手动",
+          "englishName": "Manual",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "MT",
+          "ordinal": 0
+        },
+        "status": {
+          "title": "已售",
+          "color": "gray",
+          "textColor": "white",
+          "name": "SOLD",
+          "ordinal": 1
+        },
+        "id": 29,
+        "price": 0.58,
+        "priceOnNew": 7.18,
+        "installment": true,
+        "transferable": true,
+        "desc": "09年上牌起亚锐欧，手动挡1.4排量，发变底盘巅峰状态，个人一手车，审保明年3有，带双保险，外观一般，内饰还不错，5800就是全款一口价，看清楚了，便宜车，就一口价了，包过户提档！",
+        "appearanceImages": [
+          {
+            "id": 235,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/d854689f-f6b3-4293-b967-73ed1cbff11310048248701797479515%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106172614.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 241,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/16470448-7a46-4a9d-8641-fc798d9c52f28581599114929936339%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106172615.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 242,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/fb3f3188-355f-4918-ab45-bab24fd888534134648943353509762%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061726141.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 243,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/09b9bbf1-d968-4893-b809-0a6322ffa34b9192512713850733355%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061726142.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 244,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/529d2dc1-9d2a-48ec-9d25-b96f58c804b83341993284724445826%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061726151.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 245,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/6ec926e8-1628-4e61-a42e-04aeba3cb3bf6114642724831516229%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061726143.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 246,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/55e9e95f-d8b8-49cf-ba43-c68a53d9175c17043299550892834060%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061726153.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 247,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/63d36e0b-25d8-46de-ad40-559f689e02f11073003670621456223%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061726152.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 248,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/059dd034-2159-452a-b8c5-e9803fc671022125464667706450198%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061726154.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "10年大众朗逸",
+        "mileage": 11,
+        "transferTimes": 2,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1267372800000,
+          "localizationStr": "2010-03",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 43968,
+          "name": "1.4TSI 运动版",
+          "year": 2010,
+          "seriesId": 10983,
+          "brandId": 1721
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1709222400000,
+          "localizationStr": "2024-03",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "silver",
+          "label": "银色",
+          "textColor": "white",
+          "name": "SILVER",
+          "ordinal": 6
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "自动",
+          "englishName": "Automatic",
+          "color": "#B7C488",
+          "textColor": "white",
+          "name": "AT",
+          "ordinal": 1
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 32,
+        "price": 1.68,
+        "priceOnNew": 13.48,
+        "installment": true,
+        "transferable": true,
+        "desc": "上新，最新到店2010年上牌大众朗逸一台，自动1.6排量带天窗，真皮座椅，LED大灯，空调效果特别好，发变巅峰耐用，一万多包过户提档",
+        "appearanceImages": [
+          {
+            "id": 258,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/076e3b46-845b-4d26-8a95-f2d6f693cfef948149572383273579%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106173500.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 259,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/860981d7-9a4a-4214-82b3-6b19fd67af272359283797002573235%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106173502.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 260,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/9a10d6fd-0c80-4c21-a829-d7753a40678810550104669642811386%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061735011.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 261,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/b372bd54-1111-4731-865a-f0aabdf647604988451033383127702%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231106173501.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 262,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/cfb68448-04bd-4375-b65c-711ae34aa06414814812774495611845%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061735021.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 263,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/abb89966-4524-4041-a096-8c0a4b204d6c6656720135120981174%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061735022.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 264,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/13c0ffb3-51fe-427e-b6bd-215d5f22f8c4595705654331276665%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061735025.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 265,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/8578aa99-b4b0-4a06-afb0-b24a885bbe2915131716099767885957%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061735023.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 266,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/764b0d47-6ab9-44c6-904f-4a782c0b1d527336737014770269839%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311061735024.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "10年福特蒙迪欧致胜",
+        "mileage": 20,
+        "transferTimes": 1,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1277913600000,
+          "localizationStr": "2010-07",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1719763200000,
+          "localizationStr": "2024-07",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 49745,
+          "name": "2.3L 豪华运动导航版",
+          "year": 2010,
+          "seriesId": 11198,
+          "brandId": 1731
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1719763200000,
+          "localizationStr": "2024-07",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1719763200000,
+          "localizationStr": "2024-07",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "gray",
+          "label": "灰色",
+          "textColor": "white",
+          "name": "GRAY",
+          "ordinal": 3
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "自动",
+          "englishName": "Automatic",
+          "color": "#B7C488",
+          "textColor": "white",
+          "name": "AT",
+          "ordinal": 1
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 33,
+        "price": 1.68,
+        "priceOnNew": 22.98,
+        "installment": true,
+        "transferable": true,
+        "desc": "新到2010年7月启用福特蒙迪欧致胜，个人一手车车过我名下，2.3排量，6速手自一体变速箱，无钥匙进入，一键启动，电动座椅带加热，大屏导航，天窗，多功能方向盘，定速巡航，自动空调，少有的黑色内饰，全车原版，无事故，审保同步7月！",
+        "appearanceImages": [
+          {
+            "id": 267,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/452d6f6e-3e9f-4f1e-abe3-427d503f051c13848527219790591669%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090551.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 268,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/ae0332aa-e124-4074-ba7e-d7b4fde4fda9585478432221952888%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080905511.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 269,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/4fde8e05-7ba0-4017-92a2-632de578e45812440044261911455152%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080905503.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 270,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/d9c1902a-c077-4c31-ac84-c82ff7fcf6b47718777234743796836%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080905522.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 271,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/bc8e65c7-6595-48ae-ab60-d15e673d7d8e894598763838760813%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090552.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 272,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/9699f430-14c8-4a13-84d4-e6492f8ca23b10248106474832090512%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080905521.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 273,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/1740d130-b91d-4e8f-9ca5-0491eb14299e11254665800880400286%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080905502.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 274,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/6d5915b1-437b-43a4-92a2-5fe623a7432d4587144767669809790%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090550.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 275,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/30e62331-9483-4252-a6f1-8df052bafd2310589204211319985717%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080905501.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "10年江淮瑞风商务车",
+        "mileage": 12,
+        "transferTimes": 1,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1288540800000,
+          "localizationStr": "2010-11",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1288540800000,
+          "localizationStr": "2010-11",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 58986,
+          "name": "2.0L穿梭 汽油长轴舒适版HFC4GA3-3D",
+          "year": 2015,
+          "seriesId": 11736,
+          "brandId": 1779
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1604160000000,
+          "localizationStr": "2020-11",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1288540800000,
+          "localizationStr": "2010-11",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "silver",
+          "label": "银色",
+          "textColor": "white",
+          "name": "SILVER",
+          "ordinal": 6
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "商务车",
+          "englishName": "MPV",
+          "color": "#1FB432",
+          "textColor": "white",
+          "name": "MPV",
+          "ordinal": 2
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "手动",
+          "englishName": "Manual",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "MT",
+          "ordinal": 0
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 34,
+        "price": 1.38,
+        "priceOnNew": 14.58,
+        "installment": true,
+        "transferable": true,
+        "desc": "新到江淮瑞风商务车一台，10年11月上牌，个人一手车，实表11万公里，油漆工程老板一手，全车漆面重新整备的，全车底盘易损件全部更换，没内饰简单清洗的，手动2.0带中央空调，长轴8座，原车三元催化器，拉人拉货都可选择，货拉拉一个月回本，批发价一万多点包过户",
+        "appearanceImages": [
+          {
+            "id": 276,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/4b309dde-6194-4402-8b9c-b4fa872b9b877463029369903464297%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090659.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 277,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/94909ad4-cc13-4b02-8151-660b1c43eed72611426833283506752%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090658.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 278,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/920ce820-00e4-4e94-8197-203ed839b84811364385442635720594%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080906592.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 279,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/f4758cd3-a476-4538-a5ae-1b48577d3d6d1764539005278272236%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080906591.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 280,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/be1deb3a-7c7c-4b2c-8cd5-79225840fa3b11763633569529418113%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080906593.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 281,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/de322e6a-15e9-484f-be84-c838c4187d503885546658750750591%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090700.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 282,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/84ab989f-1f21-42d2-8965-4723ab13b9fc4282531881480016300%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080907002.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 283,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/8bf7e461-6f56-4542-9f0f-054c73db505217324746282793330843%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080907001.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "10年起亚福瑞迪",
+        "mileage": 7,
+        "transferTimes": 2,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1291132800000,
+          "localizationStr": "2010-12",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1701360000000,
+          "localizationStr": "2023-12",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 70139,
+          "name": "1.6L AT GL",
+          "year": 2009,
+          "seriesId": 12478,
+          "brandId": 1853
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1693497600000,
+          "localizationStr": "2023-09",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1693497600000,
+          "localizationStr": "2023-09",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "black",
+          "label": "黑色",
+          "textColor": "white",
+          "name": "BLACK",
+          "ordinal": 4
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "自动",
+          "englishName": "Automatic",
+          "color": "#B7C488",
+          "textColor": "white",
+          "name": "AT",
+          "ordinal": 1
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 35,
+        "price": 1.68,
+        "priceOnNew": 10.88,
+        "installment": true,
+        "transferable": true,
+        "desc": "新到，10年启用起亚福瑞迪，自动挡高配，自动挡1.6带天窗，无钥匙进入，一键启动，自动空调，大屏导航，真皮座椅，多功能方向盘，四条轮胎成色很好，发变底盘巅峰，漆面才处理好，到手零投资，审保遥远，一万多包过户，要省油稳定的自动挡代步小车看过来",
+        "appearanceImages": [
+          {
+            "id": 284,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/c81be178-70be-44d2-b02c-a23c2056eb5c3862170502480450507%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090430.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 285,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/6f2d596c-af16-4c32-99e3-7b509a566c3410537580536258709052%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090431.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 286,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/e73ff18f-ade9-4ec4-bb31-1eeca80987a96458088995829880479%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080904302.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 287,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/2a02c2e5-9390-4964-a665-380761e7a0f711392313185090690699%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080904301.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 288,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/ec434a52-de4a-4d1e-a7b6-7f4c94a2c4f012589104928196279886%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080904311.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 289,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/633f069b-3577-4175-8e2b-f9df5b3fb4ee15658271343557621993%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080904312.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 290,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/1106a2bb-b2e0-4c02-beac-3b9c3ec7e33d17660770060914726812%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080904321.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 291,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/ea5fe2ea-f109-44a9-8cce-291299c948546626167367400802132%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080904322.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 292,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/8fa274c2-6207-40f8-9081-e4b41bd835a41204405278628694897%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108090432.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      },
+      {
+        "name": "10年现代伊兰特",
+        "mileage": 10,
+        "transferTimes": 2,
+        "sourceCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "plateCity": {
+          "id": 1065,
+          "name": "安庆市",
+          "level": 2
+        },
+        "firstRegistrationDate": {
+          "value": 1272643200000,
+          "localizationStr": "2010-05",
+          "format": "yyyy-MM"
+        },
+        "annualInspectionExpiryDate": {
+          "value": 1682870400000,
+          "localizationStr": "2023-05",
+          "format": "yyyy-MM"
+        },
+        "model": {
+          "id": 79682,
+          "name": "1.6L 手动豪华贵雅版",
+          "year": 2008,
+          "seriesId": 13046,
+          "brandId": 1911
+        },
+        "compulsoryInsuranceExpiryDate": {
+          "value": 1714492800000,
+          "localizationStr": "2024-05",
+          "format": "yyyy-MM"
+        },
+        "businessInsuranceExpiryDate": {
+          "value": 1714492800000,
+          "localizationStr": "2024-05",
+          "format": "yyyy-MM"
+        },
+        "color": {
+          "value": "silver",
+          "label": "银色",
+          "textColor": "white",
+          "name": "SILVER",
+          "ordinal": 6
+        },
+        "fuelType": {
+          "Companion": {},
+          "chineseName": "汽油",
+          "englishName": "Gasoline",
+          "color": "#F3A7E6",
+          "textColor": "white",
+          "name": "GASOLINE",
+          "ordinal": 0
+        },
+        "bodyType": {
+          "chineseName": "轿车",
+          "englishName": "Car",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "CAR",
+          "ordinal": 0
+        },
+        "emissionStandard": {
+          "Companion": {},
+          "chineseName": "国四",
+          "englishName": "National IV emission standard",
+          "concept": "国家第四阶段机动车污染物排放标准",
+          "implementationDate": "2010年7月1日",
+          "basisForFormulation": "《中华人民共和国大气污染防治法》",
+          "color": "#30870A",
+          "textColor": "white",
+          "name": "C4",
+          "ordinal": 4
+        },
+        "gearType": {
+          "Companion": {},
+          "chineseName": "手动",
+          "englishName": "Manual",
+          "color": "#1B56FE",
+          "textColor": "white",
+          "name": "MT",
+          "ordinal": 0
+        },
+        "status": {
+          "title": "在售",
+          "color": "green",
+          "textColor": "white",
+          "name": "ON_SALE",
+          "ordinal": 0
+        },
+        "id": 36,
+        "price": 1.15,
+        "priceOnNew": 10.18,
+        "installment": true,
+        "transferable": true,
+        "desc": "10年现代伊兰特，手动天窗，车子漂亮，无事故，审保5月，一万冒头，五毛每公里，省油好开，感兴趣联系",
+        "appearanceImages": [
+          {
+            "id": 293,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/7e7ea984-3271-4bc8-98af-4b374b1f5d1411939938777831634520%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108091036.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 294,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/c7794d96-42c7-4438-ac28-ad601f29b2f77870448260787326218%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108091037.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 295,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/720a4460-a999-4310-9de3-ce9687ab2e501017404700749230696%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080910373.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 296,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/509cdad4-6810-4608-bdac-1a417ff4be423300826660586408706%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080910371.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 297,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/7f403849-62b8-43ce-8df3-eea50d1daaea15340070365318820987%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080910374.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          },
+          {
+            "id": 298,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/APPEARANCE/3017bac8-34dd-4777-9095-ef53b16d97e61752693429456456896%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080910372.jpg",
+            "part": {
+              "title": "外观",
+              "name": "APPEARANCE",
+              "ordinal": 0
+            }
+          }
+        ],
+        "interiorImages": [
+          {
+            "id": 299,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/0661471f-d1cf-49ea-bee4-16ee8b0e39e43057979282481501981%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231108091038.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          },
+          {
+            "id": 300,
+            "url": "http://zmesc.oss-cn-hangzhou.aliyuncs.com/used-car/INTERIOR/69e86f91-af21-48d8-8b0b-f755984d797313061792104640905448%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202311080910381.jpg",
+            "part": {
+              "title": "内饰",
+              "name": "INTERIOR",
+              "ordinal": 1
+            }
+          }
+        ],
+        "dealer": {
+          "id": 1,
+          "name": "安庆市中铭二手车",
+          "logo": "https://zmesc.oss-cn-hangzhou.aliyuncs.com/storage/default/2023099/c23de0f5268734c35bc3825fc1ff14301ee2a38aee27f1222090a11.jpg",
+          "contactPerson": "刘先生",
+          "contactPhone": "15055638603"
+        }
+      }
+    ],
+    "totalPages": 2,
+    "totalElements": 19,
+    "pageNo": 1,
+    "hasNext": true
+  },
+  "isSuccessful": true
+}
