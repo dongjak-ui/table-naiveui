@@ -86,10 +86,6 @@ importers:
         version: 1.8.22(typescript@5.3.2)
 
   docs:
-    dependencies:
-      vue-fullscreen:
-        specifier: ^3.1.1
-        version: 3.1.1(vue@3.3.9)
     devDependencies:
       '@dongjak-ui/table-naiveui':
         specifier: workspace:*
@@ -7341,11 +7337,6 @@ packages:
     resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
     dev: true
 
-  /screenfull@5.2.0:
-    resolution: {integrity: sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==}
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   /scule@1.1.0:
     resolution: {integrity: sha512-vRUjqhyM/YWYzT+jsMk6tnl3NkY4A4soJ8uyh3O6Um+JXEQL9ozUCe7pqrxn3CSKokw0hw3nFStfskzpgYwR0g==}
     dev: true
@@ -8418,15 +8409,6 @@ packages:
     dependencies:
       vue: 3.3.9(typescript@5.3.2)
     dev: true
-
-  /vue-fullscreen@3.1.1(vue@3.3.9):
-    resolution: {integrity: sha512-I59sIO0O22116gwVPo1qM2cNf5binEC5vTswIm8qJsqgatGfFquIJANpoVggSUS2EgUF0Xg4tHliT1ITcwQw8Q==}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      screenfull: 5.2.0
-      vue: 3.3.9(typescript@5.3.2)
-    dev: false
 
   /vue-router@4.2.5(vue@3.3.9):
     resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==}

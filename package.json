@@ -46,7 +46,7 @@
     "vue-tsc": "^1.8.22"
   },
   "dependencies": {
-    "@dongjak-public-types/table": "^3.3.0",
+    "@dongjak-public-types/table": "workspace:*",
     "@dongjak-public-types/commons": "^2.2.0"
   }
 }
