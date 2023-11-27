@@ -1,213 +1,181 @@
-import {hopeTheme} from "vuepress-theme-hope";
-import {zhNavbar} from "./navbar";
-import {zhSidebar} from "./sidebar";
-import path from "path";
-import fs from "fs";
+import { hopeTheme } from "vuepress-theme-hope";
+import navbar from "./navbar";
+import sidebar from "./sidebar";
 
-const projectRoot = path.resolve(__dirname, '../../');
-const hostname =
-    process.env["HOSTNAME"] || "https://theme-hope-docs-demo.vuejs.press";
-const packageJsonPath = path.join(projectRoot, 'package.json');
-const packageJsonContent = fs.readFileSync(packageJsonPath, 'utf8');
-const packageJson = JSON.parse(packageJsonContent);
+export default hopeTheme({
+  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
-export default hopeTheme(
-    {
-        hostname,
-        // fullscreen: true,
-        print: true,
-        author: {
-            name: "Cruldra",
-            url: "https://cruldra.com",
-        },
-        headerDepth: 3,
-        iconAssets: "fontawesome-with-brands",
+  author: {
+    name: "Mr.Hope",
+    url: "https://mister-hope.com",
+  },
 
-        logo: "/logo.svg",
+  iconAssets: "fontawesome-with-brands",
 
-        repo: `${packageJson.author}/${packageJson.name}`,
+  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-        docsDir: "demo/theme-docs/src",
+  repo: "vuepress-theme-hope/vuepress-theme-hope",
 
-        locales: {
-            "/": {
-                // navbar
-                navbar: zhNavbar,
+  docsDir: "src",
 
-                // sidebar
-                sidebar: zhSidebar,
+  // navbar
+  navbar,
 
-                footer: "Default footer",
+  // sidebar
+  sidebar,
 
-                displayFooter: true,
+  footer: "默认页脚",
 
-                metaLocales: {
-                    editLink: "在 GitHub 上编辑此页",
-                },
-            },
+  displayFooter: true,
 
-            /**
-             * Chinese locale config
-             */
-            "/zh/": {
-                // navbar
-                navbar: zhNavbar,
-
-                // sidebar
-                sidebar: zhSidebar,
-
-                footer: "默认页脚",
-
-                displayFooter: true,
-
-                // page meta
-                metaLocales: {
-                    editLink: "在 GitHub 上编辑此页",
-                },
-            },
-        },
-
-        encrypt: {
-            config: {
-                "/demo/encrypt.html": ["1234"],
-                "/zh/demo/encrypt.html": ["1234"],
-            },
-        },
-
-        plugins: {
-            components: {
-                // 你想使用的组件
-                components: [
-                  "ArtPlayer",
-                  "AudioPlayer",
-                  "Badge",
-                  "BiliBili",
-                  "CodePen",
-                  "PDF",
-                  "Replit",
-                  "Share",
-                  "SiteInfo",
-                  "StackBlitz",
-                  // "VidStack",
-                  "VideoPlayer",
-                  "XiGua",
-                  "YouTube",
-                ],
-              },
-
-
-            comment: {
-                provider: "Giscus",
-                repo: "vuepress-theme-hope/giscus-discussions",
-                repoId: "R_kgDOG_Pt2A",
-                category: "Announcements",
-                categoryId: "DIC_kwDOG_Pt2M4COD69",
-            },
-
-            // All features are enabled for demo, only preserve features you need here
-            mdEnhance: {
-                align: true,
-                attrs: true,
-                chart: true,
-                codetabs: true,
-                demo: true,
-                echarts: true,
-                figure: true,
-                flowchart: true,
-                gfm: true,
-                imgLazyload: true,
-                imgSize: true,
-                include: true,
-                katex: true,
-                mark: true,
-                mermaid: true,
-                playground: {
-                    presets: ["ts", "vue"],
-                },
-                presentation: {
-                    plugins: ["highlight", "math", "search", "notes", "zoom"],
-                },
-                stylize: [
-                    {
-                        matcher: "Recommended",
-                        replacer: ({tag}) => {
-                            if (tag === "em")
-                                return {
-                                    tag: "Badge",
-                                    attrs: {type: "tip"},
-                                    content: "Recommended",
-                                };
-                        },
-                    },
-                ],
-                sub: true,
-                sup: true,
-                tabs: true,
-                vPre: true,
-                vuePlayground: true,
-            },
-
-            pwa: {
-                favicon: "/favicon.ico",
-                cacheHTML: true,
-                cachePic: true,
-                appendBase: true,
-                apple: {
-                    icon: "/assets/icon/apple-icon-152.png",
-                    statusBarColor: "black",
-                },
-                msTile: {
-                    image: "/assets/icon/ms-icon-144.png",
-                    color: "#ffffff",
-                },
-                manifest: {
-                    icons: [
-                        {
-                            src: "/assets/icon/chrome-mask-512.png",
-                            sizes: "512x512",
-                            purpose: "maskable",
-                            type: "image/png",
-                        },
-                        {
-                            src: "/assets/icon/chrome-mask-192.png",
-                            sizes: "192x192",
-                            purpose: "maskable",
-                            type: "image/png",
-                        },
-                        {
-                            src: "/assets/icon/chrome-512.png",
-                            sizes: "512x512",
-                            type: "image/png",
-                        },
-                        {
-                            src: "/assets/icon/chrome-192.png",
-                            sizes: "192x192",
-                            type: "image/png",
-                        },
-                    ],
-                    shortcuts: [
-                        {
-                            name: "Demo",
-                            short_name: "Demo",
-                            url: "/demo/",
-                            icons: [
-                                {
-                                    src: "/assets/icon/guide-maskable.png",
-                                    sizes: "192x192",
-                                    purpose: "maskable",
-                                    type: "image/png",
-                                },
-                            ],
-                        },
-                    ],
-                },
-            },
-
-            seo:
-                hostname === "https://theme-hope-docs-demo.vuejs.press"
-                    ? {}
-                    : {canonical: "https://theme-hope-docs-demo.vuejs.press"},
-        },
+  encrypt: {
+    config: {
+      "/demo/encrypt.html": ["1234"],
     },
-    {custom: true}
-);
+  },
+
+  // page meta
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
+  },
+
+  plugins: {
+    // You should generate and use your own comment service
+    comment: {
+      provider: "Giscus",
+      repo: "vuepress-theme-hope/giscus-discussions",
+      repoId: "R_kgDOG_Pt2A",
+      category: "Announcements",
+      categoryId: "DIC_kwDOG_Pt2M4COD69",
+    },
+
+    // All features are enabled for demo, only preserve features you need here
+    mdEnhance: {
+      align: true,
+      attrs: true,
+
+      // install chart.js before enabling it
+      // chart: true,
+
+      codetabs: true,
+
+      // insert component easily
+      // component: true,
+
+      demo: true,
+
+      // install echarts before enabling it
+      // echarts: true,
+
+      figure: true,
+
+      // install flowchart.ts before enabling it
+      // flowchart: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
+      imgLazyload: true,
+      imgSize: true,
+      include: true,
+
+      // install katex before enabling it
+      // katex: true,
+
+      // install mathjax-full before enabling it
+      // mathjax: true,
+
+      mark: true,
+
+      // install mermaid before enabling it
+      // mermaid: true,
+
+      playground: {
+        presets: ["ts", "vue"],
+      },
+
+      // install reveal.js before enabling it
+      // revealJs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+
+      stylize: [
+        {
+          matcher: "Recommended",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
+          },
+        },
+      ],
+      sub: true,
+      sup: true,
+      tabs: true,
+      vPre: true,
+
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
+    },
+
+    // uncomment these if you want a pwa
+    // pwa: {
+    //   favicon: "/favicon.ico",
+    //   cacheHTML: true,
+    //   cachePic: true,
+    //   appendBase: true,
+    //   apple: {
+    //     icon: "/assets/icon/apple-icon-152.png",
+    //     statusBarColor: "black",
+    //   },
+    //   msTile: {
+    //     image: "/assets/icon/ms-icon-144.png",
+    //     color: "#ffffff",
+    //   },
+    //   manifest: {
+    //     icons: [
+    //       {
+    //         src: "/assets/icon/chrome-mask-512.png",
+    //         sizes: "512x512",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-mask-192.png",
+    //         sizes: "192x192",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-512.png",
+    //         sizes: "512x512",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-192.png",
+    //         sizes: "192x192",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //     shortcuts: [
+    //       {
+    //         name: "Demo",
+    //         short_name: "Demo",
+    //         url: "/demo/",
+    //         icons: [
+    //           {
+    //             src: "/assets/icon/guide-maskable.png",
+    //             sizes: "192x192",
+    //             purpose: "maskable",
+    //             type: "image/png",
+    //           },
+    //         ],
+    //       },
+    //     ],
+    //   },
+    // },
+  },
+});
