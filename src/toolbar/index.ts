@@ -1,16 +1,18 @@
-import {IDataSource, ITable, IToolbar, IToolbarItem, ToolbarItemType} from "@dongjak-public-types/table";
+import {ITable, IToolbar, IToolbarItem, ToolbarItemType} from "@dongjak-public-types/table";
 
 import {Icon} from '@iconify/vue';
-import {useDataSource} from "../datasource";
 import {QueryPayloads} from "@dongjak-public-types/commons";
-
-
+import ShowColumns from "./ShowColumns.vue";
+import {TableColumn} from "naive-ui/es/data-table/src/interface";
 /**
  * 默认工具条项目列表
  */
-const defaultToolbarItems: ToolbarItemType[] = ['refresh', 'add', 'delete']
+const defaultToolbarItems: ToolbarItemType[] = ['refresh', 'add', 'delete' , "show_columns"]
 
-const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys}: {
+const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys ,columns}: {
+    columns:{
+        value:  TableColumn<any>[]
+    },
     data: {
         value: any[]
     },
@@ -27,14 +29,14 @@ const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys
 
     const deleteRows = () => {
         if (selectedRowKeys.value.length === 0) {
-            window.$message.warning(
+            window.$message!.warning(
                 '没有选中任何数据'
             )
         } else {
 
             table.dataSource.deleteRows(selectedRowKeys.value).then(res => {
                 if (res.isSuccessful()) {
-                    window.$message.success(
+                    window.$message!.success(
                         '删除成功'
                     )
                     const  selectedRows= data.value.filter((item: any) => selectedRowKeys.value.includes(item[table.pk!]))
@@ -44,7 +46,7 @@ const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys
                     // load(QueryPayloads.ofPage(pagination.page, pagination.pageSize))
                     selectedRowKeys.value = []
                 } else {
-                    window.$message.error(
+                    window.$message!.error(
                         '删除失败'
                     )
                 }
@@ -67,6 +69,7 @@ const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys
                     return {
                         type: "add",
                         text: "新增",
+componentType:"button",
                         btnType: "primary",
                         position: "left",
                         handler: () => {
@@ -76,6 +79,7 @@ const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys
                     }
                 case "delete":
                     return {
+                        componentType:"button",
                         type: "delete",
                         text: "删除",
                         position: "left",
@@ -85,12 +89,28 @@ const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys
                     }
                 case "refresh":
                     return {
+                        componentType:"button",
                         type: "refresh",
                         text: "刷新",
                         position: "left",
                         btnType: "default",
                         handler: refresh,
                         icon: h(Icon, {class: 'mr-4px text-20px', icon: 'ic-round-refresh'})
+                    }
+
+                case "show_columns":
+                    return {
+                        type: "show_columns",
+                        componentType:"custom",
+                        position:"right",
+                        //@ts-ignore
+                        component: h(ShowColumns, {
+                            columns:columns.value,
+                            storeKey:`${table.localStorageKey}/columns`,
+                            onUpdateColumns: (data: any) => {
+                                columns.value = data
+                            }
+                        })
                     }
             }
         }/* else if (typeof renderer === "object") {
@@ -131,22 +151,43 @@ const useToolbar = (table: ITable<any>, {data, pagination, load, selectedRowKeys
         return createToolbar(table.toolbar ?? defaultToolbarItems)
     })
 
-    const leftToolbarItems = computed<IToolbarItem[]>(() => {
+    const leftBtnToolbarItems = computed<IToolbarItem[]>(() => {
         return toolbar.value.items
             .map(item => item as IToolbarItem)
             .filter(item => item.position === "left")
+            .filter(item => item.componentType === "button")
+
+
+
     })
+
+    const leftCustomToolbarItems = computed<IToolbarItem[]>(() => {
+        return toolbar.value.items
+            .map(item => item as IToolbarItem)
+            .filter(item => item.position === "left")
+            .filter(item => item.componentType === "custom")
+    } )
 
     const rightToolbarItems = computed<IToolbarItem[]>(() => {
             return toolbar.value.items
                 .map(item => item as IToolbarItem)
                 .filter(item => item.position === "right")
+                .filter(item => item.componentType === "button")
         }
     )
 
+    const rightCustomToolbarItems = computed<IToolbarItem[]>(() => {
+            return toolbar.value.items
+                .map(item => item as IToolbarItem)
+                .filter(item => item.position === "right")
+                .filter(item => item.componentType === "custom")
+        } )
+
     return {
         toolbar,
-        leftToolbarItems,
+        leftBtnToolbarItems,
+        leftCustomToolbarItems,
+        rightCustomToolbarItems,
         rightToolbarItems
     }
 }

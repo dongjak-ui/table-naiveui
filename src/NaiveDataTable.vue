@@ -24,15 +24,18 @@ const props = withDefaults(defineProps<ITable<any>>(), {
     return {
       items: defaultToolbarItems
     }
+  },
+  localStorageKey: () => {
+    return  window.location.pathname
   }
 })
 
 
 const {columns} = useColumn(props)
 const {data, pagination, isLoading, load, onUpdatePage, onUpdatePageSize} = useDataSource(props)
-const {getRowKey, selectedRowKeys } = useTable(props)
-const {leftToolbarItems, rightToolbarItems} = useToolbar(props, {
-  data, pagination, load,selectedRowKeys
+const {getRowKey, selectedRowKeys} = useTable(props)
+const {leftBtnToolbarItems, rightToolbarItems, rightCustomToolbarItems} = useToolbar(props, {
+  data, pagination, load, selectedRowKeys, columns
 })
 
 
@@ -51,7 +54,7 @@ onMounted(async () => {
         <n-space class="pb-12px" justify="space-between">
 
           <n-space>
-            <template v-for="(item,index) in leftToolbarItems">
+            <template v-for="(item,index) in leftBtnToolbarItems">
 
               <n-button :type="item.btnType" @click="item.handler?.($event )">
                 <!--            <icon-ic-round-plus class="mr-4px text-20px"/>-->
@@ -61,25 +64,18 @@ onMounted(async () => {
               </n-button>
             </template>
 
-            <!--          <n-button type="error">-->
-            <!--            <icon-ic-round-delete class="mr-4px text-20px"/>-->
-            <!--            删除-->
-            <!--          </n-button>-->
-            <!--          <n-button type="success">-->
-            <!--            <icon-uil:export class="mr-4px text-20px"/>-->
-            <!--            导出Excel-->
-            <!--          </n-button>-->
+
           </n-space>
-          <!--        <n-space align="center" :size="18">-->
-          <!--          <n-button size="small" type="primary" @click="getTableData">-->
-          <!--            <icon-mdi-refresh class="mr-4px text-16px" :class="{ 'animate-spin': loading }"/>-->
-          <!--            刷新表格-->
-          <!--          </n-button>-->
-          <!--          &lt;!&ndash;          <column-setting v-model:columns="columns"/>&ndash;&gt;-->
-          <!--        </n-space>-->
+          <n-space align="center" :size="18">
+            <template v-for="(item,index) in rightCustomToolbarItems">
+
+              <component :is="item.component"/>
+            </template>
+          </n-space>
         </n-space>
         <n-scrollbar x-scrollable>
-          <n-data-table   v-model:checked-row-keys="selectedRowKeys" :loading="isLoading" :columns="columns" :data="data" :row-key="getRowKey" />
+          <n-data-table v-model:checked-row-keys="selectedRowKeys" :loading="isLoading" :columns="columns" :data="data"
+                        :row-key="getRowKey"/>
         </n-scrollbar>
         <n-pagination
             class="m-y-10px justify-end"

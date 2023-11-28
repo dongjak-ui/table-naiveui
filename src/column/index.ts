@@ -3,6 +3,7 @@ import {TableBaseColumn, TableColumn, TableSelectionColumn} from "naive-ui/es/da
 import {VNodeChild} from "vue";
 import {NText} from "naive-ui";
 import {createRenderer} from "../renderer";
+import {useLocalStorage} from "@vueuse/core";
 
 
 const createColumn = (table: ITable<any>): (column: IColumn | ColumnType) => TableColumn<any> => {
@@ -71,12 +72,18 @@ const createColumn = (table: ITable<any>): (column: IColumn | ColumnType) => Tab
         }
     }
 }
+//@ts-ignore
+const useColumn = (table: ITable<any>): { columns: any } => {
 
-const useColumn = (table: ITable<any>) => {
-    const columns = computed(() => {
-        return table?.columns?.map(createColumn(table))
-    })
 
+    const columns = ref(  table?.columns?.map(createColumn(table)))
+
+    // watch(columns, () => {
+    //     // localStorage.value = {
+    //     //     columns: columns.value
+    //     // }
+    //     console.log(columns)
+    // }, {deep: true, immediate: true})
     return {
         columns
     }

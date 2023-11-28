@@ -30,7 +30,7 @@ export default defineConfig({
         },
         rollupOptions: {
             // 预依赖(peerDependencies)的模块不要打包到库中
-            external: ['vue','naive-ui' ,/primevue\/.+/], // not every external has a global
+            external: ['vue','naive-ui','@vueuse/core' ,/primevue\/.+/], // not every external has a global
             output: {
                 // disable warning on src/index.ts using both default and named export
                 exports: 'named',
