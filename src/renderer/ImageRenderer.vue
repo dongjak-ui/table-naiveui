@@ -13,8 +13,8 @@ const images = computed(() => {
   return (props.value as { [key: string]: string }[])?.map(
       (item) => {
         return {
-          src: item[props.renderer.srcField],
-          alt: item[props.renderer.altField],
+          src: item[props.renderer.srcField!],
+          alt: item[props.renderer.altField!],
         };
       }
   )??[]

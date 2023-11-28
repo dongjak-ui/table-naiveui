@@ -1,13 +1,11 @@
 import {ColumnType, IColumn, ITable} from "@dongjak-public-types/table";
 import {TableBaseColumn, TableColumn, TableSelectionColumn} from "naive-ui/es/data-table/src/interface";
-import Tag from '../renderer/Tag.vue';
 import {VNodeChild} from "vue";
 import {NText} from "naive-ui";
 import {createRenderer} from "../renderer";
 
 
-
-export const createColumn = (table: ITable<any>): (column: IColumn | ColumnType) => TableColumn<any> => {
+const createColumn = (table: ITable<any>): (column: IColumn | ColumnType) => TableColumn<any> => {
     return (column: IColumn | ColumnType) => {
         if ((typeof column) === "string") {
             switch (column) {
@@ -36,8 +34,8 @@ export const createColumn = (table: ITable<any>): (column: IColumn | ColumnType)
                     return {
                         title: '状态',
                         key: 'status',
-                        render: (rowData: any, rowIndex: number) : VNodeChild =>{
-                            return h(NText, { depth: 3 }, { default: () => '未填写' })
+                        render: (rowData: any, rowIndex: number): VNodeChild => {
+                            return h(NText, {depth: 3}, {default: () => '未填写'})
                         }
                     } as TableBaseColumn<any>
                 default:
@@ -48,7 +46,7 @@ export const createColumn = (table: ITable<any>): (column: IColumn | ColumnType)
                 // menuTabs:['generalMenuTab', 'filterMenuTab', 'columnsMenuTab'],
                 title: (column as IColumn).label,
                 key: (column as IColumn).field,
-                minWidth:100,
+                minWidth: 100,
                 ellipsis: {
                     tooltip: true
                 },
@@ -65,11 +63,27 @@ export const createColumn = (table: ITable<any>): (column: IColumn | ColumnType)
                 // },
                 //editable: (column as IColumn).editor !== undefined,
                 // ...createTooltip(column as IColumn, table)((column as IColumn).tooltip),
-                ...createRenderer(table)((column as IColumn).renderer ,(column as IColumn)),
+                ...createRenderer(table)((column as IColumn).renderer, (column as IColumn)),
                 // ...createEditor(table)((column as IColumn).editor),
                 // ...createValueGetter(column as IColumn),
                 // ...createValueFormatter(column as IColumn)
             } as TableColumn<any>
         }
     }
+}
+
+const useColumn = (table: ITable<any>) => {
+    const columns = computed(() => {
+        return table?.columns?.map(createColumn(table))
+    })
+
+    return {
+        columns
+    }
+}
+
+export {
+
+    createColumn,
+    useColumn
 }
