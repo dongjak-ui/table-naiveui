@@ -6,6 +6,9 @@ import {darkTheme, NButton, NConfigProvider, NSpace, useMessage} from 'naive-ui'
 import {defaultToolbarItems, useToolbar} from "./toolbar";
 import {useDataSource} from "./datasource";
 import {useTable} from "./index";
+import FiltersForm from "./FiltersForm.vue";
+import {Icon} from "@iconify/vue";
+import {useFilter} from "./filter";
 
 const props = withDefaults(defineProps<ITable<any>>(), {
   theme: Theme.DARK,
@@ -37,7 +40,7 @@ const {getRowKey, selectedRowKeys} = useTable(props)
 const {leftBtnToolbarItems, rightToolbarItems, rightCustomToolbarItems} = useToolbar(props, {
   data, pagination, load, selectedRowKeys, columns
 })
-
+const {filters} = useFilter(props  )
 
 onMounted(async () => {
   load(QueryPayloads.ofPage(pagination.page, pagination.pageSize))
@@ -51,6 +54,18 @@ onMounted(async () => {
   <n-config-provider :theme="darkTheme">
     <n-message-provider>
       <div class="flex flex-col  ">
+
+        <filters-form :pagination="pagination" :load="load" :filters="filters"></filters-form>
+<!--          <n-collapse>-->
+<!--            <template #arrow>-->
+<!--              <Icon icon="mdi-drag" class="mr-8px text-20px cursor-move"/>-->
+<!--            </template>-->
+<!--            <n-collapse-item  name="1">-->
+<!--              <filters-form></filters-form>-->
+<!--            </n-collapse-item>-->
+
+<!--          </n-collapse>-->
+
         <n-space class="pb-12px" justify="space-between">
 
           <n-space>

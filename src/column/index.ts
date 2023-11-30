@@ -6,8 +6,10 @@ import {createRenderer} from "../renderer";
 import {useLocalStorage} from "@vueuse/core";
 
 
-const createColumn = (table: ITable<any>): (column: IColumn | ColumnType) => TableColumn<any> => {
-    return (column: IColumn | ColumnType) => {
+
+//@ts-ignore
+const useColumn = (table: ITable<any>): { columns: any } => {
+    const createColumn = (column: IColumn | ColumnType) => {
         if ((typeof column) === "string") {
             switch (column) {
                 case "select":
@@ -71,12 +73,8 @@ const createColumn = (table: ITable<any>): (column: IColumn | ColumnType) => Tab
             } as TableColumn<any>
         }
     }
-}
-//@ts-ignore
-const useColumn = (table: ITable<any>): { columns: any } => {
 
-
-    const columns = ref(  table?.columns?.map(createColumn(table)))
+    const columns = ref(  table?.columns?.map(createColumn ))
 
     // watch(columns, () => {
     //     // localStorage.value = {
@@ -90,7 +88,5 @@ const useColumn = (table: ITable<any>): { columns: any } => {
 }
 
 export {
-
-    createColumn,
     useColumn
 }
