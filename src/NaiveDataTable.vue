@@ -7,8 +7,8 @@ import {defaultToolbarItems, useToolbar} from "./toolbar";
 import {useDataSource} from "./datasource";
 import {useTable} from "./index";
 import FiltersForm from "./FiltersForm.vue";
-import {Icon} from "@iconify/vue";
 import {useFilter} from "./filter";
+import {TableApi} from "./TableApi";
 
 const props = withDefaults(defineProps<ITable<any>>(), {
   theme: Theme.DARK,
@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<ITable<any>>(), {
   },
   selectionMode: RowSelectionMode.MULTIPLE,
   rowActions: () => {
-    return ["add", "edit", "delete"] as RowActionType[]
+    return [ "edit", "delete"] as RowActionType[]
   },
   toolbar: () => {
     return {
@@ -29,18 +29,17 @@ const props = withDefaults(defineProps<ITable<any>>(), {
     }
   },
   localStorageKey: () => {
-    return  window.location.pathname
+    return window.location.pathname
   }
 })
-
-
-const {columns} = useColumn(props)
 const {data, pagination, isLoading, load, onUpdatePage, onUpdatePageSize} = useDataSource(props)
 const {getRowKey, selectedRowKeys} = useTable(props)
+const api = new TableApi(props, selectedRowKeys, data, pagination, load)
+const {columns} = useColumn(props, api)
 const {leftBtnToolbarItems, rightToolbarItems, rightCustomToolbarItems} = useToolbar(props, {
-  data, pagination, load, selectedRowKeys, columns
+  api, columns
 })
-const {filters} = useFilter(props  )
+const {filters} = useFilter(props)
 
 onMounted(async () => {
   load(QueryPayloads.ofPage(pagination.page, pagination.pageSize))
@@ -56,15 +55,15 @@ onMounted(async () => {
       <div class="flex flex-col  ">
 
         <filters-form :pagination="pagination" :load="load" :filters="filters"></filters-form>
-<!--          <n-collapse>-->
-<!--            <template #arrow>-->
-<!--              <Icon icon="mdi-drag" class="mr-8px text-20px cursor-move"/>-->
-<!--            </template>-->
-<!--            <n-collapse-item  name="1">-->
-<!--              <filters-form></filters-form>-->
-<!--            </n-collapse-item>-->
+        <!--          <n-collapse>-->
+        <!--            <template #arrow>-->
+        <!--              <Icon icon="mdi-drag" class="mr-8px text-20px cursor-move"/>-->
+        <!--            </template>-->
+        <!--            <n-collapse-item  name="1">-->
+        <!--              <filters-form></filters-form>-->
+        <!--            </n-collapse-item>-->
 
-<!--          </n-collapse>-->
+        <!--          </n-collapse>-->
 
         <n-space class="pb-12px" justify="space-between">
 

@@ -1,14 +1,15 @@
 import {ColumnType, IColumn, ITable} from "@dongjak-public-types/table";
 import {TableBaseColumn, TableColumn, TableSelectionColumn} from "naive-ui/es/data-table/src/interface";
 import {VNodeChild} from "vue";
-import {NText} from "naive-ui";
 import {createRenderer} from "../renderer";
-import {useLocalStorage} from "@vueuse/core";
-
+import {NSpace, NText} from 'naive-ui';
+import {TableApi} from "../TableApi";
+import useRowActions from "../rowAction";
 
 
 //@ts-ignore
-const useColumn = (table: ITable<any>): { columns: any } => {
+const useColumn = (table: ITable<any>, api: TableApi): { columns: any } => {
+    const {createRowAction} = useRowActions(table, api)
     const createColumn = (column: IColumn | ColumnType) => {
         if ((typeof column) === "string") {
             switch (column) {
@@ -16,23 +17,19 @@ const useColumn = (table: ITable<any>): { columns: any } => {
                     return {
                         type: 'selection'
                     } as TableSelectionColumn
-                // case "actions":
-                //     //@ts-ignore
-                //     return {
-                //         headerName: '操作',
-                //         field: 'actions',
-                //         flex: 1,
-                //         cellRenderer: RowActions,
-                //         cellRendererParams: {
-                //             table: table,
-                //             value: table.rowActions?.map(createAction(table))
-                //         },
-                //         cellStyle: {
-                //             display: "flex",
-                //             justifyContent: "space-between",
-                //             alignItems: "center"
-                //         }
-                //     } as IColumn & ColDef
+                case "actions":
+                    //@ts-ignore
+                    return {
+                        title: '操作',
+                        width: 40 + (table?.rowActions?.length ?? 0) * 50,
+                        key: 'actions',
+                        render: (rowData: any, rowIndex: number): VNodeChild => {
+                            return h(NSpace, {}, {
+                                default: () =>
+                                    table?.rowActions?.map(createRowAction)?.map(rowAction => rowAction.component!(rowData,api))
+                            })
+                        }
+                    } as TableBaseColumn<any>
                 case "status":
                     return {
                         title: '状态',
@@ -74,14 +71,8 @@ const useColumn = (table: ITable<any>): { columns: any } => {
         }
     }
 
-    const columns = ref(  table?.columns?.map(createColumn ))
+    const columns = ref(table?.columns?.map(createColumn))
 
-    // watch(columns, () => {
-    //     // localStorage.value = {
-    //     //     columns: columns.value
-    //     // }
-    //     console.log(columns)
-    // }, {deep: true, immediate: true})
     return {
         columns
     }

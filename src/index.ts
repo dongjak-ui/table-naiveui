@@ -6,20 +6,12 @@ const useTable = (table: ITable<any>) => {
         return rowData[table.pk!]
 
     }
-    const selectedRows = ref<any[]>([])
-    const selectedRowKeys=ref([])
-    const onUpdateCheckedRows = (keys: Array<string | number>, rows: object[], meta: {
-        row: object | undefined,
-        action: 'check' | 'uncheck' | 'checkAll' | 'uncheckAll'
-    }): void => {
-        selectedRows.value = rows.filter(row => row !== undefined && row !== null)
-    }
+    const selectedRowKeys = ref([])
 
 
     return {
         getRowKey,
-        selectedRowKeys,
-      //  onUpdateCheckedRows
+        selectedRowKeys
     }
 
 }
