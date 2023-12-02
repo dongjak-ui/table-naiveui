@@ -33,7 +33,7 @@ const option = computed(() => {
   }
 })
 const value = ref(option.value[props.editor.valueField!])
-
+// if(!value.value) alert(props.value)
 
 const options = ref([] as SelectMixedOption[])
 onMounted(async () => {

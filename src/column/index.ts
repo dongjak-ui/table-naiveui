@@ -21,7 +21,7 @@ const useColumn = (table: ITable<any>, api: TableApi): { columns: any } => {
                     //@ts-ignore
                     return {
                         title: '操作',
-                        width: 40 + (table?.rowActions?.length ?? 0) * 50,
+                       // width: 40 + (table?.rowActions?.length ?? 0) * 50,
                         key: 'actions',
                         render: (rowData: any, rowIndex: number): VNodeChild => {
                             return h(NSpace, {}, {

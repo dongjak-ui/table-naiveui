@@ -41,6 +41,7 @@ const additionalData = computed(() => {
     const data: { [key: string]: any } = {}
     Object.keys(props.editor.data).forEach((key) => {
       if (typeof props.editor.data![key] == "function")
+          //@ts-ignore
         data[key] = props.editor.data![key](props.data)
       else data[key] = props.editor.data![key]
     })
@@ -63,8 +64,8 @@ const onUploadFinished = ({
   returnValue.push(respData)
   modelValue.value= new Array(...returnValue)
 }
-
-const onRemove = (file: UploadFileInfo) => {
+const onRemove = (file: any) => {
+  //@ts-ignore
   const index = returnValue.findIndex((item) => item[props.editor.idField!] == file.id)
   returnValue.splice(index, 1)
   modelValue.value= new Array(...returnValue)
@@ -73,7 +74,6 @@ const onRemove = (file: UploadFileInfo) => {
 
 <template>
   <n-upload
-
       :multiple="props.editor.multiple"
       :data="additionalData"
       :action="props.editor.endpoint"

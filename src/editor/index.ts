@@ -88,6 +88,16 @@ export const useEditors = (props: { editors: IColumnEditor[] }) => {
                         editor
                     })
                 }
+            case 'hidden':
+
+                return  {
+                    ...editor,
+                    component: h("input", {
+                       type:"hidden",
+                        value:editor.value,
+                        name:editor.field
+                    })
+                }
         }
 
 
@@ -137,7 +147,7 @@ export const useEditors = (props: { editors: IColumnEditor[] }) => {
             return parseRule(rule)
         }) ?? []
     }
-    const formValue = ref({})
+    const formValue = ref({} as Record<string, any>)
     const editors = computed(() => {
         const _editors = props.editors.map(createEditor)
         formValue.value=_editors.reduce((acc: any, cur: IColumnEditor) => {

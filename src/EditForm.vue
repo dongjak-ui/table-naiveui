@@ -38,7 +38,7 @@ const save= (e: MouseEvent)=>{
       size="medium"
   >
     <n-form-item v-for="(editor,index) in editors" :key="index" :label="editor.label" :path="editor.field">
-      <component :is="editor.component" v-model:value="formValue[editor.field]"   />
+      <component :is="editor.component" v-model:value="formValue[editor.field!]"   />
     </n-form-item>
 
     <n-form-item >
