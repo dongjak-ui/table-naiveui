@@ -6,3 +6,4 @@ node_modules
 docs/.vuepress/public/lib
 src/typings/auto-imports.d.ts
 src/typings/components.d.ts
+pnpm-lock.yaml
