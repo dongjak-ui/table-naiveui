@@ -8,7 +8,7 @@
   "repository": "https://github.com/dongjak-ui/table-naiveui",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && vue-tsc  --outFile a.d.ts   && vite build && pnpm run copy-library-files &&  shx mv a.d.ts dist/table-naiveui.d.ts",
+    "build": "rimraf dist  && vite build && pnpm run copy-library-files  ",
     "copy-library-files": "copyfiles -f ./dist/* ./docs/.vuepress/public/lib",
     "semantic-release": "semantic-release",
     "docs:dev": "pnpm -C docs run docs:dev",
