@@ -12,11 +12,11 @@ fs.readFile('package.json', 'utf8', function(err, data) {
 
     // 添加新的字段
     packageObj.files = ["dist"];
-    packageObj.typings = "./dist/table-naiveui.d.ts";
+    packageObj.typings = "./dist/table-naiveui.es.d.ts";
     packageObj.module = "./dist/table-naiveui.es.js";
     packageObj.exports = {
         ".": {
-            "types": "./dist/table-naiveui.d.ts",
+            "types": "./dist/table-naiveui.es.d.ts",
             "import": "./dist/table-naiveui.es.js"
         }
     };

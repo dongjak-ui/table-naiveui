@@ -43,7 +43,8 @@
     "unocss": "^0.57.3",
     "unplugin-auto-import": "^0.17.1",
     "unplugin-vue-components": "0.25.2",
-    "vite": "^5.0.4"
+    "vite": "^5.0.4",
+    "vite-plugin-dts": "^3.6.4"
   },
   "dependencies": {
     "@dongjak-extensions/lang": "^2.2.0",
