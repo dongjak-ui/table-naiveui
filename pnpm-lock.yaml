@@ -30,11 +30,11 @@ importers:
         specifier: ^3.0.11
         version: 3.0.11(vue@3.3.9)
       vue:
-        specifier: ^3.3.4
+        specifier: ^3.3.9
         version: 3.3.9(typescript@5.3.2)
       vuedraggable:
-        specifier: 4.1.0
-        version: 4.1.0(vue@3.3.9)
+        specifier: 2.24.3
+        version: 2.24.3
     devDependencies:
       '@semantic-release/changelog':
         specifier: ^6.0.3
@@ -89,7 +89,7 @@ importers:
         version: 0.57.7(postcss@8.4.32)(vite@5.0.4)
       unplugin-auto-import:
         specifier: ^0.17.1
-        version: 0.17.1
+        version: 0.17.1(@vueuse/core@10.5.0)
       unplugin-vue-components:
         specifier: 0.25.2
         version: 0.25.2(vue@3.3.9)
@@ -2767,7 +2767,6 @@ packages:
 
   /@types/web-bluetooth@0.0.18:
     resolution: {integrity: sha512-v/ZHEj9xh82usl8LMR3GarzFY1IrbXJw5L4QfQhokjRV91q+SelFqxQWSep1ucXEZ22+dSTwLFkXeur25sPIbw==}
-    dev: false
 
   /@types/web-bluetooth@0.0.20:
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
@@ -3420,7 +3419,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
-    dev: false
 
   /@vueuse/core@10.6.1(vue@3.3.9):
     resolution: {integrity: sha512-Pc26IJbqgC9VG1u6VY/xrXXfxD33hnvxBnKrLlA2LJlyHII+BSrRoTPJgGYq7qZOu61itITFUnm6QbacwZ4H8Q==}
@@ -3436,7 +3434,6 @@ packages:
 
   /@vueuse/metadata@10.5.0:
     resolution: {integrity: sha512-fEbElR+MaIYyCkeM0SzWkdoMtOpIwO72x8WsZHRE7IggiOlILttqttM69AS13nrDxosnDBYdyy3C5mR1LCxHsw==}
-    dev: false
 
   /@vueuse/metadata@10.6.1:
     resolution: {integrity: sha512-qhdwPI65Bgcj23e5lpGfQsxcy0bMjCAsUGoXkJ7DsoeDUdasbZ2DBa4dinFCOER3lF4gwUv+UD2AlA11zdzMFw==}
@@ -3449,7 +3446,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
-    dev: false
 
   /@vueuse/shared@10.6.1(vue@3.3.9):
     resolution: {integrity: sha512-TECVDTIedFlL0NUfHWncf3zF9Gc4VfdxfQc8JFwoVZQmxpONhLxFrlm0eHQeidHj4rdTPL3KXJa0TZCk1wnc5Q==}
@@ -7527,8 +7523,8 @@ packages:
       smart-buffer: 4.2.0
     dev: true
 
-  /sortablejs@1.14.0:
-    resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==}
+  /sortablejs@1.10.2:
+    resolution: {integrity: sha512-YkPGufevysvfwn5rfdlGyrGjt7/CRHwvRPogD/lC+TnvcN29jDpCifKP+rBqf+LRldfXSTh+0CGLcSg0VIxq3A==}
     dev: false
 
   /source-map-js@1.0.2:
@@ -8186,7 +8182,7 @@ packages:
       - supports-color
     dev: true
 
-  /unplugin-auto-import@0.17.1:
+  /unplugin-auto-import@0.17.1(@vueuse/core@10.5.0):
     resolution: {integrity: sha512-QvdJKtFK0COSuRXzVnwjG3ir870zVhdMg6O8GKG3UO/O5W4fmJm5h71QvzI7Gp8Sx0qfCvC3f+2v0Vm489fnqQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -8200,6 +8196,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.7.6
       '@rollup/pluginutils': 5.1.0
+      '@vueuse/core': 10.5.0(vue@3.3.9)
       fast-glob: 3.3.2
       local-pkg: 0.5.0
       magic-string: 0.30.5
@@ -8448,13 +8445,10 @@ packages:
       '@vue/shared': 3.3.9
       typescript: 5.3.2
 
-  /vuedraggable@4.1.0(vue@3.3.9):
-    resolution: {integrity: sha512-FU5HCWBmsf20GpP3eudURW3WdWTKIbEIQxh9/8GE806hydR9qZqRRxRE3RjqX7PkuLuMQG/A7n3cfj9rCEchww==}
-    peerDependencies:
-      vue: ^3.0.1
+  /vuedraggable@2.24.3:
+    resolution: {integrity: sha512-6/HDXi92GzB+Hcs9fC6PAAozK1RLt1ewPTLjK0anTYguXLAeySDmcnqE8IC0xa7shvSzRjQXq3/+dsZ7ETGF3g==}
     dependencies:
-      sortablejs: 1.14.0
-      vue: 3.3.9(typescript@5.3.2)
+      sortablejs: 1.10.2
     dev: false
 
   /vuepress-plugin-auto-catalog@2.0.0-rc.1(typescript@5.3.2)(vuepress@2.0.0-rc.0):
