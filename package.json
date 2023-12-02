@@ -1,6 +1,6 @@
 {
   "name": "@dongjak-ui/table-naiveui",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -53,5 +53,16 @@
     "@iconify/vue": "4.1.1",
     "v-viewer": "^3.0.11",
     "vuedraggable": "2.24.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "typings": "./dist/table-naiveui.es.d.ts",
+  "module": "./dist/table-naiveui.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/table-naiveui.es.d.ts",
+      "import": "./dist/table-naiveui.es.js"
+    }
   }
 }
