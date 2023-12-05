@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/dongjak-ui/table-naiveui/compare/v1.4.0...v1.4.1) (2023-12-05)
+
+
+### Bug Fixes
+
+* 换成vue-draggable-next ([c458722](https://github.com/dongjak-ui/table-naiveui/commit/c45872239a554df617e073bfc633f699a38eab06))
+
 # [1.4.0](https://github.com/dongjak-ui/table-naiveui/compare/v1.3.0...v1.4.0) (2023-12-05)
 
 
