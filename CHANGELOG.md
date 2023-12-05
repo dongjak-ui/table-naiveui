@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/dongjak-ui/table-naiveui/compare/v1.2.0...v1.3.0) (2023-12-05)
+
+
+### Features
+
+* 1 ([e74b45c](https://github.com/dongjak-ui/table-naiveui/commit/e74b45c338d0df647987cf1e6701c326bf9da8dc))
+
 # [1.2.0](https://github.com/dongjak-ui/table-naiveui/compare/v1.1.0...v1.2.0) (2023-12-05)
 
 
