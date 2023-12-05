@@ -7,23 +7,30 @@
       </n-button>
     </template>
     <div class="w-180px">
-      <vue-draggable v-model="list" item-key="key">
-        <template #item="{ element }">
-          <div v-if="element.key" class="flex-y-center h-36px px-12px hover:bg-primary_active">
+      <vue-draggable-next :list="list">
+        <template      v-for="element in list"
+                       :key="element.key">
+          <div
+              v-if="element.key"
+              class="flex-y-center h-36px px-12px hover:bg-primary_active"
+
+          >
             <Icon icon="mdi-drag" class="mr-8px text-20px cursor-move"/>
             <n-checkbox v-model:checked="element.checked">
               {{ element.title }}
             </n-checkbox>
           </div>
+
         </template>
-      </vue-draggable>
+
+      </vue-draggable-next>
     </div>
   </n-popover>
 </template>
 
 <script setup lang="ts">
 import {Icon} from '@iconify/vue';
-import VueDraggable from 'vuedraggable';
+import {VueDraggableNext} from 'vue-draggable-next'
 import {useLocalStorage} from "@vueuse/core";
 import {ArrayUtil} from "@dongjak-extensions/lang";
 import {TableBaseColumn} from "naive-ui/es/data-table/src/interface";
@@ -73,7 +80,7 @@ watch(
     newValue => {
 
       localStorage.value = {
-        columns: newValue.map((item:Column) => {
+        columns: newValue.map((item: Column) => {
           return {
             key: item.key || item.type,
             checked: item.checked!
