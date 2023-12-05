@@ -18,7 +18,8 @@ fs.readFile('package.json', 'utf8', function(err, data) {
         ".": {
             "types": "./dist/table-naiveui.es.d.ts",
             "import": "./dist/table-naiveui.es.js"
-        }
+        },
+        "./style.css": "./dist/table-naiveui.css"
     };
 
     // 将JSON对象转换回字符串
