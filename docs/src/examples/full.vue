@@ -118,7 +118,10 @@ const dataSource: IDataSource<any> = {
 </script>
 <template>
   <!--  <n-button>111</n-button>-->
-  <NaiveDataTable :columns="columns" :dataSource="dataSource"/>
+  <n-message-provider>
+    <NaiveDataTable :columns="columns" :dataSource="dataSource"/>
+  </n-message-provider>
+
 </template>
 <style scoped>
 </style>

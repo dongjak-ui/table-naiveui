@@ -34,6 +34,7 @@ export default defineConfig({
             // 预依赖(peerDependencies)的模块不要打包到库中
             external: ['vue','naive-ui','@vueuse/core' ,/primevue\/.+/], // not every external has a global
             output: {
+                assetFileNames: 'table-naiveui.css',
                 // disable warning on src/index.ts using both default and named export
                 exports: 'named',
                 // Provide global variables to use in the UMD build
