@@ -19,10 +19,8 @@
   "author": "cruldra",
   "license": "MIT",
   "peerDependencies": {
-    "@vueuse/core": "10.5.0",
     "naive-ui": "2.35.0",
-    "vue": "^3.3.9",
-    "vuedraggable": "4.1.0"
+    "vue": "^3.3.9"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -52,6 +50,8 @@
     "@dongjak-public-types/commons": "^3.0.0",
     "@dongjak-public-types/table": "^3.5.0",
     "@iconify/vue": "4.1.1",
-    "v-viewer": "^3.0.11"
+    "v-viewer": "^3.0.11",
+    "@vueuse/core": "10.5.0",
+    "vuedraggable": "4.1.0"
   }
 }
